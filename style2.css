@@ -1,0 +1,360 @@
+
+
+/*navbar*/
+/*Buttonの設定*/
+.navListBox{
+  background-color: white;
+  position:absolute;
+  z-index:1;
+  height: 70px;
+  width:980px;
+  margin:0 auto;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top:15px;
+}
+.navList{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 980px;
+  padding: 22px 15px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  /*justify-content: space-between;*/
+  justify-content: space-around;
+  position:absolute;
+  z-index:2;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  list-style: none;
+  display:flex;
+  font-family: "Rounded Mplus 1c";
+  font-weight:450;
+  font-size:20px;
+}
+.navButton{
+	max-width:150px;
+	height:50px;
+	text-align: center;
+	display: inline-block;
+	width: 200px;
+	height: 54px;
+	text-decoration: none;
+	line-height: 54px;
+	outline: none;
+  border-radius: 3px;
+  /*border:solid 2px #000;*/
+  /*background-color:#e8e8e8;*/
+}
+.nacButton::before,
+.navButton::after {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	content: '';
+}
+.navButton,
+.navButton::before,
+.navButton::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+/*Buttonの詳細設定*/
+.navButton {
+	position: relative;
+	z-index: 2;
+  /*border:solid 2px #333;*/
+  color: #333;
+}
+.navButton:hover {
+  letter-spacing: 5px;
+}
+
+
+/*背景はじまり*/
+/*mainVisual（メインロゴなど）*/
+#mainVisual{
+  height: 100vh;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#mainVisual .Haikei{
+  margin: 0 auto;
+  position:relative;
+  z-index: -1;
+  /*-webkit-filter: blur(4px) sepia(15%);
+  filter: blur(4px) sepia(15%);*/
+}
+
+/*タイトルボックスはじまり*/
+#titleBox{
+  font-family: 'Oswald', sans-serif;
+  align:center;
+  overflow: hidden
+  max-width:1280px;
+  height:100px;
+  /*border:solid 1px #000;*/
+  position:absolute;
+  margin: 0 auto;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top:40vh;
+  z-index:1;
+}
+#titleBox .title{
+  font-size:40px;
+  letter-spacing:140px;
+  text-indent:140px;
+  position:absolute;
+  align:center;
+  top:-30px;
+  left: 0;
+  right: 0;
+  }
+#titleBox .subTitle{
+  letter-spacing:1px;
+  font-size:19px;
+  position:absolute;
+  top:80px;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width:1279px){
+  #titleBox .title{
+    font-size:40px;
+    letter-spacing:10vw;
+    text-indent:10vw;
+  }
+}
+@media screen and (max-width:768px){
+  #titleBox .title{
+    font-size:35px;
+    letter-spacing:7vw;
+    text-indent:7vw;
+  }
+  #titleBox .subTitle{
+    font-size:14px;
+  }
+}
+
+  #downButton{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top:90vh;
+    z-index:3;
+  }
+
+/*背景おわり*/
+
+
+/*ページ全般*/
+html{
+  background-color: #fafafa;
+}
+#page{
+  padding-top: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1440px;
+  font-family: "Rounded Mplus 1c";
+  font-weight: 100;
+}
+section{
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+a {
+  text-decoration:none;
+}
+/*ページ全般おわり*/
+
+
+
+/*ページ内の詳しい設定はじまり*/
+/*ようこそ！*/
+.welcome {
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom:solid 1px #CCCCCC;
+  padding-top:20px;
+}
+
+/*Box*/
+.box{
+  padding-bottom: 40px;
+  /*padding: 30px 15px;*/
+  text-align:center;
+  margin:0px auto;
+  max-width:600px;
+  letter-spacing: 1px;
+  line-height:1.5em;
+}
+.introLogo{
+  height:30px;
+  position: relative;
+  top:2px;
+}
+
+h2{
+  font-size:35px;
+  font-weight: 300;
+  padding: 10px 15px;
+}
+h3{
+  font-size:20px;
+  font-weight: 300;
+}
+
+/*広報誌一覧はじまり*/
+.numberList{
+  list-style:none;
+  max-width:1440px;
+  margin:0 auto;
+  padding: 30px 60px;
+  display: -webkit-flex; /* Safari */
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.numberList li{
+  font-weight:200;
+  flex: auto;
+  margin-bottom: 15px;
+}
+.numberList li .month{
+  font-weight:300;
+  font-size:12px;
+  color:#545454;
+}
+/*広報誌一覧おわり*/
+
+/*snsButton*/
+.snsList{
+  max-width:980px;
+  margin:0 auto;
+  align:center;
+  margin-bottom: 20px;
+  padding: 30px 15px;
+  list-style:none;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content: space-between;
+}
+.snsBox{
+  text-align:center;
+  padding: 15px 15px;
+  /*margin:0px auto;*/
+  margin-bottom:60px;
+  max-width:280px;
+	min-height:180px;
+  letter-spacing: 1px;
+  line-height:1.5em;
+	border-radius: 15px;
+  box-shadow:2px 4px #CCCCCC;
+}
+/*580px以下の時はじまり*/
+@media screen and (max-width: 580px) {
+  .snsList{
+    margin-bottom: 20px;
+    padding: 0 15px;
+    display:flex;
+    flex-direction: column;
+  }
+  .snsList .snsBox{
+    text-align:center;
+    max-width:600px;
+    min-height:100px;
+    letter-spacing: 1px;
+    line-height:1.5em;
+  	border-radius: 15px;
+  }
+}
+/*580px以下の時おわり*/
+
+.boxTitle{
+	align:center;
+	max-width:130px;
+	padding:10px;
+	margin:15px;
+	margin:0 auto;
+	border-bottom:solid 1px #fafafa;
+}
+.boxContent{
+  font-weight: 300;
+}
+.snsBox,
+.snsBox::before,
+.snsBox::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+/*HatenaBlog*/
+.hatenaBlogBox{
+  border: 1px solid #4d4d4d;
+  background-color:#4d4d4d;
+  color:#fafafa;
+}
+.hatenaBlogBox:hover {
+	background-color: #fafafa;
+	border-color: #4d4d4d;
+	color:#000;
+}
+
+/*Twitter*/
+.twitterBox{
+  border: 1px solid #55acee;
+  background-color:#55acee;
+  color:#fafafa;
+}
+.twitterBox:hover {
+	background-color: #fafafa;
+	border-color: #55acee;
+	color:#000;
+}
+
+/*mail*/
+.mailBox{
+  border: 1px solid #00b389;
+  background-color:#00b389;
+  color:#fafafa;
+}
+.mailBox:hover {
+	background-color: #fafafa;
+	border-color: #00b389;
+	color:#000;
+}
+/*ページ内の詳しい設定おわり*/
+
+/*footer*/
+#pageFoot{
+  padding-top:20px;
+  font-size:14px;
+  text-align: center;
+  color:white;
+  background-color:#212121;
+  border-top:solid 1px #CCCCCC;
+  height:100px;
+}

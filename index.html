@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>TDUPRESS公式Webサイト</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+  <!-- <script type="text/javascript" src=".../Desktop/TDU/jquery-3.1.1.min.js"></script> -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+    $(function(){
+       // #で始まるアンカーをクリックした場合に処理
+       $('a[href^=#]').click(function() {
+          // スクロールの速度
+          var speed = 1200; // ミリ秒
+          // アンカーの値取得
+          var href= $(this).attr("href");
+          // 移動先を取得
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          // 移動先を数値で取得
+          var position = target.offset().top;
+          // スムーススクロール
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+       });
+    });
+  </script>
+
+</head>
+
+
+<body>
+
+<nav>
+  <!-- メインビジュアル -->
+  <div id="mainVisual">
+      <!-- 背景の背景 -->
+
+      <!-- 背景ビデオ -->
+      <!-- <video autoplay loop muted poster="Haikei.jpg" class="Haikei">
+        <source src="pressHaikei.mp4" type="video/mp4" />
+        <img src="Haikei.jpg" />
+      </video> -->
+
+
+      <img class="Haikei" src="hada.jpg" />
+
+
+      <!-- navbar -->
+      <!-- <div class="navListBox"></div>
+      <ul class="navList">
+        <li><a class="navButton" href="#">Home</a>
+        <li><a class="navButton" href="#">About</a>
+        <li><a class="navButton" href="#">Blog</a>
+        <li><a class="navButton" href="#">Twitter</a>
+        <li><a class="navButton" href="#">Contact</a>
+      </ul> -->
+
+      <!-- メインロゴSVG -->
+        <!-- <img src="tdupresslogo4.svg" alt="" width="47%" media> -->
+        <div id=titleBox media>
+        <p class="title">TDUPLAS</p>
+        <div class="subTitle">「<img src="tdupresslogo.svg" height="16px">」Welcome Page.</div>
+      </div>
+
+      <div id="downButton">
+        <a href="#page"><img src="downButton.svg" alt="" width="40" Align="center"></a>
+      </div>
+    </div>
+</nav>
+
+<article>
+  <div id="page">
+    <h1 class="welcome">ようこそ、TDUPRESS公式Webサイトへ！</h1>
+
+    <section class="box">
+    <h2><img src="tdupresslogo.svg" class="introLogo">とは?</h2>
+    <p></p>
+    <img src="intro-logo.jpg" alt="">
+    <p>TDUPRESSとは東京電機大学東京千住キャンパス新聞委員会が発行する学内広報誌です。体育祭、旭祭、そして学術研究発表会をはじめとした学内行事の取材を中心に、北千住周辺のグルメ記事やインタビューなど精力的な様々な活動を心がけています。発行されたTDUPRESSは校内の掲示板やメディアセンター等で配布されています。見かけたら是非、お手に取ってみてください。</p>
+    </section>
+
+    <section class="numberBox">
+    <h2>私たちは電大学内広報誌の<img src="tdupresslogo.svg" class="introLogo">を作っています。</h2>
+    <p class="box">私たちは年間を通し、5種類のTDUPRESSを作成します。<br>それぞれには"号"が付けられ、電大の行事と紐づく形で作成されます。</p>
+    <ul class="numberList">
+      <li><img src="A4size.png" height="250px"><br>新入生歓迎号<br><span class="month">4月</span>
+      <li><img src="A4size.png" height="250px"><br>入学式号<br><span class="month">5月</span>
+      <li><img src="A4size.png" height="250px"><br>体育祭号<br><span class="month">6月</span>
+      <li><img src="A4size.png" height="250px"><br>旭祭直前号<br><span class="month">10月</span>
+      <li><img src="A4size.png" height="250px"><br>旭祭号<br><span class="month">12月</span>
+    </ul>
+    </section>
+
+    <section>
+      <h2>Blog、Twitterもやってます。</h2>
+      <p class="box">学内広報誌に加え、2016年からHatenaBlogにてブログを開始しました。ブログでは、メンバーたちの日常的な散文などをゆるりと発信していく予定です。<br>またTwitterでは、主に最新号の情報や告知などを発信しています。<br>以下のボタンをクリックして、ぜひ見てみてください。</p>
+      <ul class="snsList" media="screen and (max-width: 378px)">
+      <a href="" div class="snsBox hatenaBlogBox">
+        <h3 class="boxTitle"><li>HatenaBlog</h3>
+        <p class="boxContent">TDUPRESSのコラムなど、はてなブログにて発信しています。</p>
+      </a>
+
+      <a href="https://twitter.com/tdupress5507d" class="snsBox twitterBox">
+        <h3 class="boxTitle"><li>Twitter</h3>
+        <p class="boxContent">TDUPRESSの新刊情報、その他お知らせなどを呟きます。</p>
+      </a>
+
+      <a href="" class="snsBox mailBox">
+        <h3 class="boxTitle"><li>お問い合わせ</h3>
+        <p class="boxContent">その他、お問い合わせはこちらからお願いします。</p>
+      </a>
+    </ul>
+    </section>
+    </div>
+
+  </article>
+
+
+  <footer id="pageFoot">
+    <p><img src="tdupresslogo1.svg" width="160" class="footlogo"></p>
+    <p id="copyright"><small>Copyright&copy; 2017 @TDUPRESS All Rights Reserved.</small></p>
+  </footer>
+
+
+
+
+</body>
+
+
+</html>
