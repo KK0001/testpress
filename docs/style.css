@@ -1,103 +1,18 @@
 
-
-/*navbar*/
-/*Buttonの設定*/
-.navListBox{
-  background-color: white;
-  position:absolute;
-  z-index:1;
-  height: 70px;
-  width:980px;
-  margin:0 auto;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin-top:15px;
-}
-.navList{
-  margin: 0 auto;
-  text-align: center;
-  max-width: 980px;
-  padding: 22px 15px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  /*justify-content: space-between;*/
-  justify-content: space-around;
-  position:absolute;
-  z-index:2;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  list-style: none;
-  display:flex;
-  font-family: "Rounded Mplus 1c";
-  font-weight:450;
-  font-size:20px;
-}
-.navButton{
-	max-width:150px;
-	height:50px;
-	text-align: center;
-	display: inline-block;
-	width: 200px;
-	height: 54px;
-	text-decoration: none;
-	line-height: 54px;
-	outline: none;
-  border-radius: 3px;
-  /*border:solid 2px #000;*/
-  /*background-color:#e8e8e8;*/
-}
-.nacButton::before,
-.navButton::after {
-	position: absolute;
-	z-index: 1;
-	display: block;
-	content: '';
-}
-.navButton,
-.navButton::before,
-.navButton::after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all .3s;
-	transition: all .3s;
-}
-/*Buttonの詳細設定*/
-.navButton {
-	position: relative;
-	z-index: 2;
-  /*border:solid 2px #333;*/
-  color: #333;
-}
-.navButton:hover {
-  letter-spacing: 5px;
-}
-
-
 /*背景はじまり*/
 /*mainVisual（メインロゴなど）*/
 #mainVisual{
   height: 100vh;
-  width:100wh;
   background-size: cover;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
-#mainVisual .Haikei{
-  height: 100vh;
-  overflow: hidden;
+/*#mainVisual .Haikei{
   margin: 0 auto;
   position:relative;
   z-index: -1;
-  /*-webkit-filter: blur(4px) sepia(15%);
-  filter: blur(4px) sepia(15%);*/
-}
+}*/
 
 /*タイトルボックスはじまり*/
 #titleBox{
@@ -160,7 +75,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    margin-top:80vh;
+    margin-top:85vh;
     z-index:3;
   }
 
@@ -177,7 +92,7 @@ html{
   text-align: center;
   max-width: 1440px;
   font-family: "Rounded Mplus 1c";
-  font-weight: 300;
+  font-weight: 100;
 }
 section{
   padding-top:50px;
