@@ -7,6 +7,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: #8ca4cf;
 }
 /*#mainVisual .Haikei{
   margin: 0 auto;
@@ -92,7 +93,7 @@ html{
   text-align: center;
   max-width: 1440px;
   font-family: "Rounded Mplus 1c";
-  font-weight: 100;
+  font-weight: 300;
 }
 section{
   padding-top:50px;
