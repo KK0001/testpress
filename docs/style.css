@@ -153,8 +153,7 @@ a:active { color:#a8a8a8; text-decoration:none }
 
 /*Box*/
 .box{
-  padding-bottom: 40px;
-  /*padding: 30px 15px;*/
+  padding:15px 15px 40px;
   text-align:center;
   margin:0px auto;
   max-width:600px;
