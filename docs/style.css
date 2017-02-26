@@ -1,13 +1,13 @@
 
 /*背景はじまり*/
-/*mainVisual（メインロゴなど）*/
+/*mainVisual*/
 #mainVisual{
   height: 100vh;
   background-size: cover;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: #8ca4cf;
+  background-color: #ffffe6;
 }
 /*#mainVisual .Haikei{
   margin: 0 auto;
@@ -99,12 +99,48 @@ section{
   padding-top:50px;
   padding-bottom: 50px;
 }
-a {
-  text-decoration:none;
-}
+a:link { color:#fff; text-decoration:none }
+a:visited { color:#fff; text-decoration:none }
+a:hover { color:#a8a8a8; text-decoration:none }
+a:active { color:#a8a8a8; text-decoration:none }
 /*ページ全般おわり*/
 
-
+/*メニューバーはじまり*/
+#menu {
+  background: #6e6e6e;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: none;
+  z-index: 3;
+  padding-bottom:12px;
+}
+#menu .navBox{
+  max-width:600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 35px;
+}
+#menu ul {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing:0.25em;
+}
+#menu ul li {
+  float: left;
+}
+#menu ul li a {
+  color: #fafafa;
+  text-decoration: none;
+  padding: 0 15px;
+}
+#menu ul li .top{
+  color: #e83890;
+}
+/*メニューバーおわり*/
 
 /*ページ内の詳しい設定はじまり*/
 /*ようこそ！*/
@@ -160,7 +196,7 @@ h3{
   margin-bottom: 15px;
 }
 .numberList li .month{
-  font-weight:300;
+  font-weight:400;
   font-size:12px;
   color:#545454;
 }
@@ -269,11 +305,11 @@ h3{
 
 /*footer*/
 #pageFoot{
-  padding-top:20px;
+  padding-top:16px;
   font-size:14px;
   text-align: center;
   color:white;
   background-color:#212121;
   border-top:solid 1px #CCCCCC;
-  height:100px;
+  height:120px;
 }
