@@ -138,10 +138,10 @@ a:active { color:#a8a8a8; text-decoration:none }
   padding: 0 15px;
 }
 #menu ul li a:hover {
-  color: #e83890;
+  color: #ff87a3;
 }
 #menu ul li .top{
-  color: #e83890;
+  color: #ff87a3;
 }
 
 /*メニューバーおわり*/
