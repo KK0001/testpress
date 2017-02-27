@@ -137,9 +137,13 @@ a:active { color:#a8a8a8; text-decoration:none }
   text-decoration: none;
   padding: 0 15px;
 }
+#menu ul li a:hover {
+  color: #e83890;
+}
 #menu ul li .top{
   color: #e83890;
 }
+
 /*メニューバーおわり*/
 
 /*ページ内の詳しい設定はじまり*/
